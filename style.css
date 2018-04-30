@@ -7,6 +7,7 @@
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 ul {
@@ -54,7 +55,6 @@ header h2 {
   font-weight: lighter;
 
 }
-
 /* NOTE: First Div */
 
 .background-image {
@@ -109,7 +109,9 @@ header h2 {
   font-weight: bold;
 }
 
-/* NOTE: Second Div */
+/* NOTE: Destinations */
+.fifth-container,
+.fourth-container,
 .third-container,
 .second-container {
   display: flex;
@@ -117,20 +119,34 @@ header h2 {
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: auto;
   text-align: center;
   color: #555;
+  /* display: none; */
+
 }
 
+.fifth-container h1,
+.fourth-container h1,
 .third-container h1,
 .second-container h1 {
   margin-top: 100px;
   margin-bottom: 40px;
 }
 
+.fifth-container p,
+.fourth-container p,
 .third-container p,
 .second-container p {
   max-width: 770px;
   text-align: center;
+  line-height: 2;
+}
+
+.third-container p,
+.second-container p,
+.first-p {
+  margin: 0 35px;
 }
 
 hr {
@@ -163,4 +179,138 @@ hr {
   padding: 20px;
 }
 
-/* NOTE: Third Div */
+.second-container {
+  margin-bottom: 80px;
+}
+
+/* NOTE: Tour Packages */
+.fifth-container,
+.fourth-container {
+  background: #F4F1F4;
+}
+
+.trip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 35px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  min-width: 300px;
+  margin: 5px;
+}
+
+.grid-item p {
+  padding: 25px 0px;
+  max-width:500px;
+}
+
+.grid-item p i {
+  font-size: 60px;
+}
+
+/* NOTE: Quotes */
+
+blockquote {
+  max-width: 770px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 0 35px;
+}
+
+blockquote footer {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.third-container {
+  /* background: white; */
+  width: 100%;
+}
+
+/* NOTE: Learn More */
+
+input {
+  border-radius: 5px;
+  padding: 13px 5px;
+  font-size: 16px;
+  min-width: 300px;
+  max-width: 770px;
+  width: 35%;
+  margin: 30px;
+}
+
+.fifth-container .input-div {
+  width: 100%;
+  /* max-width: 770px; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.fifth-container p {
+  padding: 0 35px;
+
+}
+
+/* NOTE: Footer */
+
+#footer {
+  background-color: #4E7182;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer p i {
+  font-size: 30px;
+}
+
+#footer p {
+  margin: 15px 35px;
+}
+
+#footer .social-media {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  min-width: 100px;
+}
+
+/* NOTE: Media queries */
+
+@media (max-width: 900px) {
+  .second-container ul.images li.large {
+    flex-basis: 50%;
+  }
+
+  .second-container ul.images li.small {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 689px) {
+  .grid-item {
+    width: 100%;
+  }
+
+  .second-container ul.images li.large {
+    flex-basis: 100%;
+    height: auto;
+  }
+
+  .second-container ul.images li.small {
+    flex-basis: 100%;
+    height: auto;
+  }
+}
