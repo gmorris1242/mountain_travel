@@ -12,6 +12,7 @@ a {
 
 ul {
   list-style: none;
+  height: auto;
 }
 
 /* NOTE: ANIMATIONS */
@@ -103,7 +104,7 @@ header h2 {
 
 .btn {
   border-radius: 5px;
-  background-color: #4043AB;
+  background-color: #8590F7;
   padding: 15px 35px;
   font-size: 12px;
   font-weight: bold;
@@ -119,11 +120,8 @@ header h2 {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: auto;
   text-align: center;
   color: #555;
-  /* display: none; */
-
 }
 
 .fifth-container h1,
@@ -150,7 +148,7 @@ header h2 {
 }
 
 hr {
-  border: 1px solid #4245A5;
+  border: 1px solid #8590F7;
   width: 275px;
   margin: 40px;
 }
@@ -169,6 +167,8 @@ hr {
   background-position: center;
   background-size: cover;
   padding: 20px;
+  min-height: 300px;
+
 }
 
 .second-container ul.images li.large {
@@ -177,10 +177,13 @@ hr {
   background-position: center;
   background-size: cover;
   padding: 20px;
+  min-height: 300px;
+
 }
 
 .second-container {
   margin-bottom: 80px;
+  overflow: auto;
 }
 
 /* NOTE: Tour Packages */
@@ -213,6 +216,7 @@ hr {
 
 .grid-item p i {
   font-size: 60px;
+  color: #8590F7;
 }
 
 /* NOTE: Quotes */
@@ -306,12 +310,12 @@ input {
 
   .second-container ul.images li.large {
     flex-basis: 100%;
-    height: auto;
+    min-height: 300px;
   }
 
   .second-container ul.images li.small {
     flex-basis: 100%;
-    height: auto;
+    min-height: 300px;
   }
 
   header {
