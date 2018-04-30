@@ -313,4 +313,22 @@ input {
     flex-basis: 100%;
     height: auto;
   }
+
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav a {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  header nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
 }
