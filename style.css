@@ -273,6 +273,7 @@ input {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+
 }
 
 #footer p i {
@@ -280,7 +281,9 @@ input {
 }
 
 #footer p {
-  margin: 15px 35px;
+  margin: 15px 25px;
+  font-size: .75rem;
+  text-align: center;
 }
 
 #footer .social-media {
@@ -299,6 +302,11 @@ input {
 
   .second-container ul.images li.small {
     flex-basis: 50%;
+  }
+
+  #footer {
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
